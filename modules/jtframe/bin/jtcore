@@ -656,8 +656,10 @@ fi
 # Show compilation  time
 END_TIME=$(date +%s)
 COMPILE_TIME=$[$END_TIME - $START_TIME]
-MINUTES=$[$COMPILE_TIME / 60]
-SECONDS=$[$COMPILE_TIME % 60]
+# MINUTES=$[$COMPILE_TIME / 60]
+MINUTES=$((COMPILE_TIME / 60))
+# SECONDS=$[$COMPILE_TIME % 60]
+SECONDS=$((COMPILE_TIME % 60))
 
 echo -e "${gBG}completed${NC}${wBG} at $(date) - compile Time: ${red}${MINUTES}m${SECONDS}s${NC}"
 exit $FAIL

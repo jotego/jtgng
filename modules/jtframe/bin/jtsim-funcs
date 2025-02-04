@@ -238,6 +238,11 @@ set_mist_as_target() {
     TARGET=mist
 }
 
+set_sidi_as_target() {
+    TOP=mist_test
+    TARGET=sidi
+}
+
 set_sidi128_as_target() {
     TOP=mist_test
     TARGET=sidi128

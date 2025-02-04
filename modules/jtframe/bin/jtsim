@@ -182,6 +182,7 @@ case "$1" in
         ;;
     #################### MiST setup
     -mist) set_mist_as_target;;
+    -sidi) set_sidi_as_target;;
     -sidi128) set_sidi128_as_target;;
     #################### MiSTer setup
     -mister|-mr)
